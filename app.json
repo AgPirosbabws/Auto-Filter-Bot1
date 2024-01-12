@@ -1,0 +1,78 @@
+{
+    "name": "DORAEMON-BOT",
+    "description": "The Telegram Autofilter Bot",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/b/bd/Doraemon_character.png",
+    "keywords": ["Telegram", "auto-filter", "DORAEMON"],
+    "repository": "https://github.com/AgPirosbabws/Auto-Filter-Bot1",
+    "env": {
+        "WEBHOOK": {
+            "description": "True/False if your server is web support required? the value is True else False",
+            "value": "True",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Your bot token.",
+            "required": true
+        },
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "required": true
+        },
+        "INDEX_CHANNELS": {
+            "description": "Username or ID of channel or group. Separate multiple IDs by space.",
+            "required": false
+        },
+        "ADMINS": {
+            "description": "Username or ID of Admin. Separate multiple Admins by space.",
+            "required": true
+        },
+        "URL": {
+            "description": "Base URL Of Bot",
+            "required": true
+        },
+        "LANGUAGES": {
+            "description": "Wich U  prefer?",
+            "required": false
+        },
+        "PICS": {
+            "description": "Add some telegraph link of pictures .",
+            "required": false
+        },
+        "LOG_CHANNEL": {
+            "description": "Bot Logs,Give a channel id with -100xxxxxxx",
+            "required": true                              
+        },
+        "AUTH_CHANNEL": {
+            "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
+            "required": false
+        },           
+        "SUPPORT_GROUP": {
+            "description": "Suppport Group ID ",
+            "required": true
+        },
+        "DATABASE_URL": {
+            "description": "mongoDB URI.",
+            "required": true
+        },
+        "OPENAI_API": {
+            "description": "OpenAI apk key for query search",
+            "required": false
+        },
+        "BIN_CHANNEL": {
+            "description": "A channel to the stream and download feature, add channel id and make bot admin in channel",
+            "required": true
+        }
+    },
+    "buildpacks":
+        [
+            {"url": "heroku/python"}
+        ]      
+}
+
+
+
+
