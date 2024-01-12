@@ -67,16 +67,18 @@
             "required": true
         }
     },
-    "buildpacks":
-        [
-            {"url": "heroku/python"}
-        ]      
-    "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "eco"}
+    "buildpacks": [
+    {
+      "url": "heroku/python"
     }
-    
+    ],
+    "stack": "heroku-22",
+    "formation": {
+        "worker": {
+        "quantity": 1,
+        "size": "eco"
+       }
+    }
 }
 
 
